@@ -2,6 +2,7 @@
 
 cd /mnt/c/RetroArch-Win64/saves
 cp -r /mnt/d/Documents/PCSX2/memcards ./PCSX2
+cp -r /mnt/d/Documents/Dolphin\ Emulator/GC ./Dolphin
 if [[ `git status --porcelain` ]]; then
 	echo "Changes detected"
 else
