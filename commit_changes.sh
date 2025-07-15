@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm .git/index.lock
 cd /mnt/c/RetroArch-Win64/saves
 cp -r /mnt/d/Documents/PCSX2/memcards ./PCSX2
 cp -r /mnt/d/Documents/Dolphin\ Emulator/GC ./Dolphin
