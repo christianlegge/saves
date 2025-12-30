@@ -3,7 +3,7 @@
 rm .git/index.lock
 cd /mnt/c/RetroArch-Win64/saves
 cp -r /mnt/d/Documents/PCSX2/memcards ./PCSX2
-cp -r /mnt/d/Documents/Dolphin\ Emulator/GC ./Dolphin
+cp -r /home/christian/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/GC ./Dolphin
 cp -r /mnt/d/Games/emulators/ppsspp-dev/memstick/* ./PPSSPP-standalone
 if [[ `git status --porcelain` ]]; then
 	echo "Changes detected"
