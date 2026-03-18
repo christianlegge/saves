@@ -6,7 +6,7 @@ cp -r /c/RetroArch-Win64/saves/* .
 cp -r /home/christian/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/GC ./Dolphin
 cp -r /home/christian/.config/PCSX2/memcards/* ./PCSX2/memcards/
 cp -r /home/christian/.config/duckstation/memcards/* ./Duckstation/memcards/
-cp -r /home/christian/.config/ppsspp/PSP ./PPSSPP-standalone
+cp -r /home/christian/.config/ppsspp/PSP ./PPSSPP-SDL-linux
 if [[ `git status --porcelain` ]]; then
 	echo "Changes detected"
 else
