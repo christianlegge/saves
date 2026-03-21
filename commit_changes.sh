@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+shopt -u extglob
 
 rm .git/index.lock
 cd /home/christian/saves
@@ -6,7 +8,7 @@ cp -r /c/RetroArch-Win64/saves/* .
 cp -r /home/christian/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/GC ./Dolphin
 cp -r /home/christian/.config/PCSX2/memcards/* ./PCSX2/memcards/
 cp -r /home/christian/.config/duckstation/memcards/* ./Duckstation/memcards/
-cp -r /home/christian/.config/ppsspp/PSP ./PPSSPP-SDL-linux
+find /home/christian/.config/ppsspp/PSP/SAVEDATA -mindepth 1 -type d ! -name "*INSTALL*" | parallel cp -r {} ./PPSSPP-SDL-linux/SAVEDATA
 if [[ `git status --porcelain` ]]; then
 	echo "Changes detected"
 else
